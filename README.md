@@ -4,6 +4,9 @@ Un sistema Full-Stack diseñado para digitalizar, gestionar y emitir licencias d
 
 ---
 
+<img width="406" height="288" alt="image" src="https://github.com/user-attachments/assets/c9b96149-eb6f-46c1-ba50-1c4b8d301a34" />
+
+
 ## 🛠️ Stack Tecnológico
 
 **Backend:**
