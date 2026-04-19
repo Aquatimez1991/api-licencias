@@ -52,9 +52,11 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> registrar(@RequestBody Usuario usuario) {
 
-        Rol rolAdmin = new Rol();
-        rolAdmin.setId(1L);
-        usuario.setRol(rolAdmin);
+        if (usuario.getRol() == null || usuario.getRol().getId() == null) {
+            Rol rolAdmin = new Rol();
+            rolAdmin.setId(1L);
+            usuario.setRol(rolAdmin);
+        }
 
         Usuario nuevoUsuario = usuarioRepository.save(usuario);
         return ResponseEntity.ok(nuevoUsuario);
